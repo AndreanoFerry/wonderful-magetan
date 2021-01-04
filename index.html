@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Wisata</title>
+ <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+	<div id="wrapper">
+    <div class="header">
+    	<input type="checkbox" id="tag-menu"/>
+		  <label class="fa fa-bars menu-bar" for="tag-menu"></label>
+		  <div class="jw-drawer">
+		    <nav>
+		      <ul>
+		        <li><a href="index.html"><i class="fa fa-Home"></i>Home</a></li>
+		        <li><a href="#recomendation"><i class="fa fa-recomendation"></i><p style="font-size: 22px">Recomendation</p></a></li>
+		      </ul>
+		    </nav>
+		  </div>
+		 <label class="logo">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+		 	<form class="porm">
+   			<input class="search" type="text" placeholder="Search..." required>
+    		<input class="btn-search" type="button" value="Search">		
+			</form>
+      </div>
+      <div class="slideshow-container">
+      <div class="mySlides fade">
+        <a href="konten1.html"><img class="imgslide" src="img/Telaga-sarangan.jpg"></a>
+      </div>
+
+      <div class="mySlides fade">
+        <a href="konten8.html"><img class="imgslide" src="img/puncak-lawu.jpg"></a>
+      </div>
+
+      <div class="mySlides fade">
+        <a href="konten9.html"><img class="imgslide" src="img/candi.jpg"></a>
+      </div>
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+      </div>
+       </div>
+      <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex> slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 10000); 
+      }
+
+      </script>
+    <div class="container">
+      <div class="kategori" id="recomendation">Recomendation</div>
+      <div class="content2">
+      <div class="konten-utama1">
+      	<a href="konten1.html" >
+                  <img class="gbr-content" src="img/Telaga-sarangan2.jpg">
+      	</a>
+      </div> 
+      <div class="konten-utama1">
+      	<a href="konten2.html">
+                  <img class="gbr-content" src="img/mojosemi-FP2.jpg">
+            </a>
+      </div> 
+      <div class="konten-utama1">
+      	<a href="konten3.html">
+                  <img class="gbr-content" src="img/terjun-tirtasari.jpg">
+            </a>
+      </div> 
+      <div class="konten-utama1">
+      	<a href="konten4.html">
+                  <img class="gbr-content" src="img/genilangit2.jpg">
+            </a>
+      </div> 
+      <div class="konten-utama1">
+      	<a href="konten5.html">
+                  <img class="gbr-content" src="img/telaga-wahyu2.jpg">
+            </a>
+      </div> 
+      </div>
+      <div class="kategori2">
+            <a href="konten1.html"><div class="namaKonten">Telaga Sarangan</div></a>
+            <a href="konten2.html"><div class="namaKonten">Mojosemi Forest Park</div></a>
+            <a href="konten3.html"><div class="namaKonten">Air Terjun Tirtasari</div></a>
+            <a href="konten4.html"><div class="namaKonten">Taman Genilangit</div></a>
+            <a href="konten5.html"><div class="namaKonten">Telaga Wahyu</div></a>
+      </div>
+      <div class="content2">
+      <div class="konten-utama1">
+        <a href="konten6.html" >
+                  <img class="gbr-content" src="img/kampong-pinus2.jpg">
+        </a>
+      </div> 
+      <div class="konten-utama1">
+        <a href="konten7.html">
+                  <img class="gbr-content" src="img/cemoro-sewu2.jpg">
+            </a>
+      </div> 
+      <div class="konten-utama1">
+        <a href="konten8.html">
+                  <img class="gbr-content" src="img/puncak-lawu.jpg">
+            </a>
+      </div> 
+      <div class="konten-utama1">
+        <a href="konten9.html">
+                  <img class="gbr-content" src="img/candi2.jpg">
+            </a>
+      </div> 
+      <div class="konten-utama1">
+        <a href="konten10.html">
+                  <img class="gbr-content" src="img/wonomulyo2.jpg">
+            </a>
+      </div> 
+      </div>
+      <div class="kategori2">
+            <a href="konten6.html"><div class="namaKonten">Kampoeng Pinus Sarangan</div></a>
+            <a href="konten7.html"><div class="namaKonten">Cemoro Sewu</div></a>
+            <a href="konten8.html"><div class="namaKonten">Puncak Gunung Lawu</div></a>
+            <a href="konten9.html"><div class="namaKonten">Candi simbatan</div></a>
+            <a href="konten10.html"><div class="namaKonten">Desa Wisata Wonomulyo</div></a>
+           <!-- <a href="#"><div class="namaKonten">Candi Simbatan<div></a>
+            <a href="#"><div class="namaKonten">Desa Wisata Wonomulyo</div></a>-->
+      </div>
+	  </div>
+        <br>
+	  <!--<div class="kategori" id="latest">Latest</div>
+	  <div class="content2">
+	  	<div class="konten-utama1">
+      	<a href="konten2.html">
+                  <img class="gbr-content" src="img/konten2/2.jpg">
+      	</a>
+      </div> 
+      <div class="konten-utama1">
+      	<a href="#">
+                  <img class="gbr-content" src="img/NA.png">
+            </a>
+      </div> 
+      <div class="konten-utama1">
+      	<a href="#">
+                  <img class="gbr-content" src="img/NA.png">
+            </a>
+      </div> 
+      <div class="konten-utama1">
+      	<a href="#">
+                  <img class="gbr-content" src="img/NA.png">
+            </a>
+      </div> 
+      <div class="konten-utama1">
+      	<a href="#">
+                  <img class="gbr-content" src="img/NA.png">
+            </a>
+      </div> 
+      <div class="konten-utama1">
+      	<a href="#">
+                  <img class="gbr-content" src="img/NA.png">
+            </a>
+      </div> 
+      <div class="konten-utama1">
+      	<a href="#">
+                  <img class="gbr-content" src="img/NA.png">
+            </a>
+      </div> 
+      <div class="konten-utama1">
+      	<a href="#">
+                  <img class="gbr-content" src="img/NA.png">
+            </a>
+      </div> 
+	  </div>
+         <div class="kategori2" id="newest">
+            <a href="konten2.html"><div class="namaKonten">Noblesse</div></a>
+            <a href="#"><div class="namaKonten">nama</div></a>
+            <a href="#"><div class="namaKonten">nama</div></a>
+            <a href="#"><div class="namaKonten">nama</div></a>
+            <a href="#"><div class="namaKonten">nama</div></a>
+            <a href="#"><div class="namaKonten">nama</div></a>
+            <a href="#"><div class="namaKonten">nama</div></a>
+            <a href="#"><div class="namaKonten">nama</div></a>
+      </div>
+      <br>
+	  <div class="kategori" id="topmanga">Top Manga</div>
+	  <div class="content2"> 
+	  	<div class="konten-utama1">
+      	<a href="konten3.html">
+                  <img class="gbr-content" src="img/konten3/cover.jpg">
+      	</a>
+      </div> 
+      <div class="konten-utama1">
+      	<a href="#">
+                  <img class="gbr-content" src="img/NA.png">
+      	</a>
+      </div> 
+      <div class="konten-utama1">
+      	<a href="#">
+                  <img class="gbr-content" src="img/NA.png">
+            </a>
+      </div> 
+      <div class="konten-utama1">
+      	<a href="#">
+                  <img class="gbr-content" src="img/NA.png">
+            </a>
+      </div> 
+      <div class="konten-utama1">
+      	<a href="#">
+                  <img class="gbr-content" src="img/NA.png">
+            </a>
+      </div> 
+      <div class="konten-utama1">
+      	<a href="#">
+                  <img class="gbr-content" src="img/NA.png">
+            </a>
+      </div> 
+      <div class="konten-utama1">
+      	<a href="#">
+                  <img class="gbr-content" src="img/NA.png">
+            </a>
+      </div> 
+      <div class="konten-utama1">
+      	<a href="#">
+                  <img class="gbr-content" src="img/NA.png">
+            </a>
+      </div> 
+	</div>
+       <div class="kategori2" id="newest">
+            <a href="konten3.html"><div class="namaKonten">Tower of God</div></a>
+            <a href="#"><div class="namaKonten">nama</div></a>
+            <a href="#"><div class="namaKonten">nama</div></a>
+            <a href="#"><div class="namaKonten">nama</div></a>
+            <a href="#"><div class="namaKonten">nama</div></a>
+            <a href="#"><div class="namaKonten">nama</div></a>
+            <a href="#"><div class="namaKonten">nama</div></a>
+            <a href="#"><div class="namaKonten">nama</div></a>
+      </div>
+    </div>-->
+    <br>
+    <footer class="footer">
+    		Andreano Ferry 
+     </footer>
+  </div>
+</body>
+</html>
